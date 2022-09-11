@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Conversor de Moedas</title>
+  
+    <link rel="stylesheet" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com">
+    <link href=
+"https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap" 
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+    <body>
+        <div class="container">
+          <div class="title">
+            <h1 class="page-title">
+              Conversor de moedas
+            </h1>
+            <p class="page-subtitle">
+              Descubra os valores em Real R$
+            </p>
+          </div>
+          <div class="conversor">
+            <label for="moeda">Selecione a moeda</label>
+            <select id="moeda" size="1">
+              <option></option>
+              <option>Dólar</option>
+              <option>Bitcoin</option>
+              <option>Euro</option>
+              <option>Iene</option>
+            </select>
+            <label for="valor">Insira o valor</label>
+            <input type="number" id="valor" placeholder="0.00" size="2" />
+            <button type="submit" onclick="Converter()">Converter</button>
+          </div>
+          <div class="result">
+            <h2 id="valorConvertido"></h2>
+          </div>
+        </div>
+        <script src="./script.js"></script>
+      
+      </body>
+</body>
+</html>
